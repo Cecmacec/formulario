@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>    
+        <fieldset class="field-header">
+           
+<h1 id="title">
+Encuesta de servicio Tecnico MACERONU
+</h1>
+
+<p id="description">
+   Agradecemos el valioso tiempo brindado para ayudarnos a atenderte mejor 
+</P>
+
+        </fieldset>
+      </header>
+    <form id="survey-form">
+        <fieldset class="container data-user"> 
+            <legend>tus datos</legend>
+
+        <label id="name-label">Nombre</label>
+<input type="text" id="name" placeholder="Ingresa tu nombre" required>
+
+<label id="email-label">correo Electronico</label>
+<input type="email" id="email" placeholder="Ingresa tu correo electronico" required>
+
+<label id="number-label">Edad</label>
+<input type="number" id="number" placeholder="Ingresa tu edad" required min="10" max="100">
+</fieldset>
+
+<section class="container questions-user"> 
+    <fieldset class="user-type"> 
+        <legend><label>Que tipo de cliente eres</label></legend>
+
+        <label id="select-label">Selecciona una opcion</label>
+
+<select id="dropdown">
+    <option value="mayorista" name="mayorista" >Mayorista</option>
+    <option value="minorista" name="minorista">Minorista</option>
+    <option value="medio mayorista" name="medio mayorista">Medio Mayorista</option>
+    <option value="casual" name="casual">Casual</option>
+    <option value="frecuente" name="frecuente">Frecuente</option>
+    <option value="empleado" name="empleado">Empleado</option>
+</select>
+
+</fieldset>
+
+<fieldset class="user-recommend">
+    <legend><label>¿Recomendarias a MACERONU?</label></legend>
+ 
+<label id="recommend-label">Selecciona una opcion</label>
+
+
+<div class="container-radio">
+
+<div>
+<label id="Si-label">Si</label>
+<input type="radio" name="recommend" value="Si" >
+</div>
+
+
+<div>
+<label id="No-label">No</label>
+<input type="radio" name="recommend" value="No">
+</div>
+
+
+<div>
+<label id="Quizas-label">Quizas</label>
+<input type="radio" name="recommend" value="Quizas" >
+</div>
+
+</div>
+
+</fieldset>
+
+
+<fieldset class="user-suggest-implement"> 
+    <legend>
+        <label>¿Que tipo de servicio te gustaria que implementaramos?</label>
+    </legend>
+
+    <label>Puedes seleccionar varias opciones</label>
+
+<div class="container-checkbox">
+    <div>
+        <input type="checkbox" name="pc-fix" value="pc-fix" >
+        <label id="pc-fix-label">servicio de reparacion a computadoras</label>
+</div>
+
+<div>
+<input type="checkbox" name="online-fix" value="online-fix">
+<label id="online-fix-label">Servicio de reparacion en linea</label>
+</div>
+</div>
+
+<div class="container-checkbox">
+    <div>
+<input type="checkbox" name="home-fix" value="home-fix" >
+<label id="home-fix-label">Servicio de reparacion a domicilio</label>
+</div>
+
+<div>
+<input type="checkbox" name="game-fix" value="game-fix" >
+<label id="game-fix-label">servicio de reparacion a consolas</label>
+</div>
+</div>
+
+</fieldset>
+
+
+
+
+<fieldset class="container-anotacion">
+    <legend>Regalanos tus comentarios y sugerencias</legend>
+<textarea placeholder="Anota aqui">
+</textarea>
+</fieldset>
+</section>
+
+
+
+<button id="submit" type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>
